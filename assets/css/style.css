@@ -256,11 +256,12 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1rem + 0.3vw);
+  font-weight:400;
 }
 @media (min-width: 1200px) {
   h5, .h5 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -272,6 +273,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 300;
+  text-align:justify;
 }
 
 abbr[title] {
@@ -627,7 +629,7 @@ progress {
 .display-3 {
   font-size: calc(1.6875rem + 5.25vw);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 @media (min-width: 1200px) {
   .display-3 {
@@ -638,7 +640,7 @@ progress {
 .display-4 {
   font-size: calc(1.4375rem + 2.25vw);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 @media (min-width: 1200px) {
   .display-4 {
@@ -649,7 +651,7 @@ progress {
 .display-5 {
   font-size: calc(1.425rem + 1.5vw);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 @media (min-width: 1200px) {
   .display-5 {
@@ -10047,7 +10049,7 @@ body {
   }
 }
 .project-details-wrapper {
-  --bs-project-details-style-padding: 60px 38px 85px 38px;
+  --bs-project-details-style-padding: 40px 30px;
   --bs-project-details-wrapper-padding: 50px 34px;
   --bs-project-details-wrapper-max-width: 365px;
   --bs-project-details-title-margin-bottom: 60px;
@@ -10378,7 +10380,7 @@ body {
 
 @media (max-width: 1399.98px) {
   .post-heading h5, .post-heading .h5 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -10478,7 +10480,7 @@ body {
     border-top: none;
   }
   .section-comment-inner h5, .section-comment-inner .h5 {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
@@ -11049,7 +11051,7 @@ svg {
 @media (max-width: 991.98px) {
   .subtitle {
     font-size: 26px !important;
-    line-height: 140%;
+    /* line-height: 140%; */
   }
 }
 @media (max-width: 575.98px) {
@@ -11123,6 +11125,7 @@ svg {
 @media (max-width: 767.98px) {
   .section-separator {
     --bs-section-padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -24807,16 +24810,34 @@ textarea {
 /*# sourceMappingURL=style.css.map */
 
 
-
+.gallery-info span {
+  color:var(--bs-primary);
+}
 .section-footer {
   margin-top:180px;
 }
 .logo img {
-  width: 100%;
+  width: 80%;
+}
+.logo-storm img {
+  width: 60%;
 }
 footer {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
 }
 body.page-people p {
   color:#333;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-brand .logo,.navbar-brand-p {
+    text-align: center;
+  }
+  .logo img {
+    width: 60%;
+  }
+  .logo-storm img {
+    width: 40%;
+  }
 }
